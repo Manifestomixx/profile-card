@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile Card</title>
+</head>
+<body>
+    <div class="circle">
+        <span class="purple"></span>
+        <span class="blue"></span>
+    </div>
+  <div class="profile-card">
+    <!-- profile picture -->
+    <div class="profile-image">
+        <img src="manifesto passport.jpg" alt="profile Picture" data-testid="profilePicture">
+        <span class="status-indicator"></span>
+    </div>
+    <!-- Name and job title -->
+    <div class="section">
+        <h2 data-testid="fullName" class="name">SUNDAY JOSHUA</h2>
+        <h3 data-testid="jobTitle" class="job-title">Frontend Engineer</h3>
+    </div>
+
+    <!-- curved background -->
+    <div class="curve"></div>
+    <div class="pattern">
+        <span class="ball"></span>
+        <!-- <span class="ball"></span> -->
+        <span class="ball"></span>
+    </div>
+    <div class="text">
+       
+        <!-- short bio -->
+        <p data-testid="shortBio" class="bio">I am a passionate and detail oriented Frontend developer specializing in React, javascript, CSS and Tailwind CSS, creating responsive and engaging web applications.</p>
+    
+        <!-- current location -->
+        <p data-testid="currentLocation" class="location">Lagos, Nigeria</p>
+        <p data-testid="emailAddress" class="email">Manifestomixx@gmail.com</p>
+        <div data-testid="socialLinks" class="social-links">
+            <a href="https://linkedin.com/in/sundayjoshua" class="social-links" target="_blank"><img src="logo-linkedin.svg" alt="linkedin-icon" class="icon"></a>
+            <a href="https://github.com/Manifestomixx" class="social-links" target="_blank"><img src="logo-github.svg" alt="github-icon" class="icon"></a>
+            <a href="https://x.com/manifestobeatz?s=21" class="social-links" target="_blank"><img src="logo-twitter.svg" alt="twitter-icon" class="icon"></a>
+        </div>
+        <p id="utc-time" data-testid="currentTimeUTC" class="utc-time">UTC Time: <span id="utcTime"></span></p>
+    </div>
+  </div>  
+ <script src="script.js"></script>   
+</body>
+</html>
