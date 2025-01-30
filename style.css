@@ -74,7 +74,13 @@ body {
 }
 
 /* online indicator */
-.status-indicator{
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; background-color: grey; }
+    100% { opacity: 2; }
+}
+
+.status-indicator {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -83,7 +89,7 @@ body {
     height: 12px;
     border-radius: 50%;
     border: 2px solid white;
-    
+    animation: blink 5s infinite;
 }
 .section{
     margin-bottom: 20px;
@@ -108,7 +114,7 @@ body {
 .pattern{
     display: flex;
     gap: 30px;
-    filter: blur(1px);
+    z-index: 10;
 }
 .ball{
     height: 19px;
